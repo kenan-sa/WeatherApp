@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <section>
+      <div class="air air1"></div>
+      <div class="air air2"></div>
+      <div class="air air3"></div>
+      <div class="air air4"></div>
+      <div id="table-container">
+        <h2>Weather App</h2>
+        <div id="input-container">
+          <input type="text" id="city"  placeholder="Enter city name" />
+          <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <table id="weather-table">
+          <tr>
+            <th>Location</th>
+            <th>Weather</th>
+            <th>Icon</th>
+            <th>Country</th>
+            <th>Time</th>
+          </tr>
+        </table>
+      </div>
+
+      <div id="weather-data"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
